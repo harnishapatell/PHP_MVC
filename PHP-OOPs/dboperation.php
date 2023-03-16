@@ -2,7 +2,7 @@
     class dboperation{
         private $server = "localhost";
         private $user = "root";
-        private $password = "root";
+        private $password = "";
         private $database = "categories_db";
         public $conn;
 
