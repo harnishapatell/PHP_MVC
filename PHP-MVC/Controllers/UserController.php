@@ -3,11 +3,9 @@
 require_once('../Models/class-user.php');
 
 class UserController extends UserDetails {
-    public $db;
     private $user;
 
         public function __construct() {
-            $this->db = new DB();
             $this->user = new UserDetails();
         }
 

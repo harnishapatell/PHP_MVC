@@ -4,11 +4,9 @@ require_once('../Models/class-category.php');
 //require_once('../views/home.php');
 
     class CategoryController extends CategoryDetails {
-        public $db;
         private $category;
 
         public function __construct() {
-            $this->db = new DB();
             $this->category = new CategoryDetails();
         }
         public function insertcategory() {

@@ -3,13 +3,11 @@ session_start();
 require_once ('../Controllers/CategoryController.php');
 require_once ('../Controllers/UserController.php');
 
-$db = new DB();
 $category = new CategoryDetails();
 $category = $category->getallcategories();
-//$db = new category($db);
 
 $categorycontroller = new CategoryController();
-$categorycontroller->index();
+
 // Check if user has requested to delete a category
 if (isset($_GET['delete'])) {
     $id = $_GET['delete'];

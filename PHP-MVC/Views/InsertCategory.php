@@ -2,8 +2,6 @@
 require_once('../Controllers/CategoryController.php');
 $category = new CategoryController();
 $category->insertcategory();
-
-//$categories = $category->getParentCategories();
 ?>
 
 <!DOCTYPE html>

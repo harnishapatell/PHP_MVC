@@ -11,11 +11,9 @@ $category = new CategoryDetails();
 
 class CategoryApionroller extends CategoryDetails {
     
-    public $db;
     public $category;
 
     public function __construct() {
-        $this->db = new DB();
         $this->category = new CategoryDetails();
         // create a api variable to get HTTP method dynamically
         $api = $_SERVER['REQUEST_METHOD'];

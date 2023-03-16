@@ -84,17 +84,6 @@ require_once('class-db.php');
             return $result;
         }
 
-        // public function getTotalCount() {
-        //     $sql = "SELECT COUNT(*) AS total_count FROM categories";
-        //     $result = $this->query($sql);
-        //     $row = $this->fetch_array($result);
-        //     return $row['total_count'];
-        // }
-        // public function fetch_array($result_set) {
-        //     return mysqli_fetch_array($result_set);
-        // }
-        
-
         public function getcategorynamebyid($id)
         {
             $sql = "SELECT c1.category_name AS category_name, c2.category_name AS parent_name
@@ -137,8 +126,6 @@ require_once('class-db.php');
             return $result;
         }
         
-        
-
         public function getdatabyid($id)
         {
             $sql = "SELECT * FROM categories WHERE id = '$id'";
