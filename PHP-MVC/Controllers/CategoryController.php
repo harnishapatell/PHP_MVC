@@ -43,11 +43,6 @@ require_once('../Models/class-category.php');
              return $result;
          }
 
-        // public function index(){
-        //     $categories = $this->category->getallcategories();
-        //     echo json_encode($categories);
-        // }
-
         public function index() {
             return $this->category->getAllCategories();
           }

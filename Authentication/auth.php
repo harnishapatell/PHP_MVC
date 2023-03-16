@@ -33,9 +33,7 @@ class register extends dbclass{
 class Login extends dbclass {
     public $id;
     public $email;
-    // public function __construct() {
-    //     parent::__construct();
-    // }
+    
     public function log($email, $password) {
         $stmt = $this->conn->prepare("SELECT * FROM user WHERE email=? AND password=MD5(?)");
         $stmt->bind_param("ss", $email, $password);

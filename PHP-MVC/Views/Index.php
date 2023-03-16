@@ -126,11 +126,11 @@ else
             </div>
         </div>
     </div>
-    <script>
-function openPopup(imageUrl) {
-  var popup = window.open('', '_blank', 'width=400,height=400');
-  popup.document.write('<img src="' + imageUrl + '" style="max-width:100%;max-height:100%;">');
-}
+<script>
+    function openPopup(imageUrl) {
+        var popup = window.open('', '_blank', 'width=400,height=400');
+        popup.document.write('<img src="' + imageUrl + '" style="max-width:100%;max-height:100%;">');
+    }
 </script>
 </body>
 </html>

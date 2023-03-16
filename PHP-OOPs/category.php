@@ -65,38 +65,6 @@
 
         }
 
-		// public function allCategory()
-        // {
-        //     $sort_option = "";
-        //     if(isset($_GET['sort_alphabet']))
-        //     {
-        //         if($_GET['sort_alphabet'] == "a-z")
-        //         {
-        //             $sort_option = "ASC";
-        //         }
-        //         elseif($_GET['sort_alphabet'] == "z-a")
-        //         {
-        //             $sort_option = "DESC";
-        //         }
-        //     }
-
-        //     if (isset($_GET['page_no']) && $_GET['page_no']!="") 
-        //     {
-        //         $page_no = $_GET['page_no'];
-        //     } else 
-        //     {
-        //         $page_no = 1;
-        //     }
-
-        //         $total_records_per_page = 5;
-        //         $offset = ($page_no-1) * $total_records_per_page;
-
-        //         $query = "SELECT * FROM categories ORDER BY category_name $sort_option LIMIT $offset, $total_records_per_page ";
-        //         $result = $this->conn->select($query);
-        //         return $result;
-            
-        // }
-
         public function allCategory()
         {
             $sort_option = "";

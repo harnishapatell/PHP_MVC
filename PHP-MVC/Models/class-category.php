@@ -110,18 +110,6 @@ require_once('class-db.php');
             $category_name = $data['category_name'];
             $description = $data['description'];
             $image = '';
-
-            // if (isset($data['category_name'])) {
-            //     $category_name = $data['category_name'];
-            // } else {
-            //     $category_name = '';
-            // }
-        
-            // if (isset($data['description'])) {
-            //     $description = $data['description'];
-            // } else {
-            //     $description = '';
-            // }
             
             if (isset($files['image']) && $files['image']['error'] == 0) {
                 $image = $files['image']['name']; // get image name
